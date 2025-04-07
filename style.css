@@ -102,6 +102,26 @@ a.btn-dark:hover {
   color: var(--dark-color);
 }
 
+.hero-wrapper .hero-image {
+  flex: 1;
+  position: relative;
+}
+
+.hero-wrapper .hero-ground {
+  background-color: #fff;
+  box-shadow: 0px 6px 15px 4px rgba(0, 0, 0, 0.25);
+  width: 360px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 18px;
+  z-index: -100;
+}
+
+.hero-wrapper .hero-text {
+  flex: 1.4;
+}
+
 .hero-wrapper .subheading {
   font-size: 16px;
   line-height: 200%;
