@@ -87,6 +87,7 @@ a.btn-dark:hover {
 .wrapper {
   width: 1152px;
   margin: 0 auto;
+  position: relative;
 }
 
 .hero-wrapper {
@@ -127,4 +128,21 @@ a.btn-dark:hover {
   line-height: 200%;
   width: 490px;
   margin-bottom: 25px;
+}
+
+.social-icons {
+  position: absolute;
+  bottom: 48px;
+  right: 0;
+}
+
+.social-icons a {
+  margin: 0 30px;
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
 }
