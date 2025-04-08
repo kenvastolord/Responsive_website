@@ -106,6 +106,9 @@ a.btn-dark:hover {
 .hero-wrapper .hero-image {
   flex: 1;
   position: relative;
+  opacity: 0;
+  animation: fadeInImg 1s ease forwards;
+  animation-delay: 0.5s;
 }
 
 .hero-wrapper .hero-ground {
@@ -194,6 +197,17 @@ a.btn-dark:hover {
   0% {
     opacity: 0;
     transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInImg {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
   }
   100% {
     opacity: 1;
