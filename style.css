@@ -121,6 +121,9 @@ a.btn-dark:hover {
 
 .hero-wrapper .hero-text {
   flex: 1.4;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+  animation-delay: 0.5s;
 }
 
 .hero-wrapper .subheading {
@@ -183,6 +186,17 @@ a.btn-dark:hover {
 
 @keyframes move-right {
   100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
     transform: translateX(0);
   }
 }
