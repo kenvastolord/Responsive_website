@@ -167,3 +167,22 @@ a.btn-dark:hover {
   left: 0;
   height: 100vh;
 }
+
+.hero-bg-left img {
+  animation: move-right 1500ms forwards ease-in-out;
+  transform: translateX(-100%);
+}
+
+.hero-bg-left img:nth-child(2) {
+  animation-delay: 200ms;
+}
+
+.hero-bg-left img:first-child {
+  animation-delay: 400ms;
+}
+
+@keyframes move-right {
+  100% {
+    transform: translateX(0);
+  }
+}
