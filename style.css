@@ -215,6 +215,11 @@ a.btn-dark:hover {
   }
 }
 
+.bg-left-mobile,
+.bg-bottom-mobile {
+  display: none;
+}
+
 /* Mobile Version */
 
 @media screen and (max-width: 600px) {
@@ -270,12 +275,14 @@ a.btn-dark:hover {
   }
 
   .bg-left-mobile {
+    display: block;
     position: fixed;
     top: 0;
     z-index: -100;
   }
 
   .bg-bottom-mobile {
+    display: block;
     position: fixed;
     bottom: 0;
   }
