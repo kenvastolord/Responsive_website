@@ -275,6 +275,11 @@ a.btn-dark:hover {
     z-index: -100;
   }
 
+  .bg-bottom-mobile {
+    position: fixed;
+    bottom: 0;
+  }
+
   nav {
     padding-top: 20px;
   }
